@@ -4,7 +4,7 @@
 10회차 프로젝트로 익히는 실전 데이터 분석 및 딥러닝 입문
 
 ## Contents
-* 내용 : HTML, JavaScript 내용
+* 내용 : HTML, CSS, JavaScript
 * 참조 코드 : http://www.w3schools.com/js
 * 마크다운 사용법 총정리 :  https://heropy.blog/2017/09/30/markdown/
 
