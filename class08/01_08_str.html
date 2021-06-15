@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<!--p tag가 script보다 위쪽에 있어야 정상적으로 수행된다.-->
+<p id="print"></p>
+<script>
+      txt = "I can eat banana all day"
+      var x = txt.slice(10,30)
+<!--      alert("from 10 : " + x)-->
+      document.getElementById('print').innerHTML = x
+      document.write(x)
+</script>
+
+</body>
+</html>

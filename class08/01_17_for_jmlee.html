@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="practice">실습</p>
+<script>
+    let name = ["Kim", "Lee", "Park", "Hwang"];
+    let text = "";
+    for (let i=0; i<name.length; i++){
+        text += name[i] + "<br>";
+    }
+    document.getElementById("practice").innerHTML = text;
+</script>
+</body>
+</html>
+
+<!-- 변수 이름을 name 으로 사용하는데도 불구하고 정상적으로 작동하는 이유가 무엇이지?
+let을 사용하면 시스템 변수를 건드리지 않고 script 내부에서만 접근할 수 있는 name이라는 변수를 만들게 되어요.
+그래서 시스템에 있는 name이라는 변수를 건드리지 않아서 에러가 발생하지 않는 것 같아요.
+그래서 let과 const를 사용해서 변수를 선언하는 것도 좋은 습관일 수 있어요. + 변수이름을 시스템 이름과 비슷하게 하지 않게 하면 이중으로 문제를 차단할 수 있겠죠?
+(comment by sjlee)
+-->

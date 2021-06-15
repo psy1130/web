@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChangeStyle</title>
+</head>
+<body>
+<div onmouseover="this.style.backgroundColor='orange'">
+  마우스가 올라갈 때 색깔이 변경됩니다
+</div>
+<div onclick="this.style.backgroundColor='green'">
+  클릭하면 색깔이 변경됩니다
+</div>
+<div onmouseleave="this.style.backgroundColor='red'">
+  미우스가 떠날 때 색깔이 변경됩니다.
+</div>
+<p onmouseenter ="this.style.backgroundColor='blue'">
+  이것은 p 태그입니다. 마우스가 들어가면? 색깔이 변경됩니다.
+</p>
+<p id="p_tag" onclick ="document.getElementById('p_tag').style.fontSize='30px'">
+  이것은 p 태그입니다. 클릭하면 폰트사이즈가 커집니다.
+</p>
+
+<p id="letter" onclick="document.getElementById('letter').innerHTML='클릭되었습니다.'">
+    이것은 p 태그입니다. 클릭하면 문구가 바뀝니다.
+</p>
+
+<div id="div1" onmouseover="this.style.color='blue'" onclick="myFunc()" >
+    마우스를 올리면 색깔이, 클릭하면 폰트사이즈가 변경됩니다.
+</div>
+<script>
+    function  myFunc(){
+        document.getElementById("div1").innerHTML = "클릭되었습니다."
+        document.getElementById("div1").style.fontSize='30px'
+    }
+</script>
+<!--p 태그와 div 태그의 차이는 문장 사이의 간격인 것 같다. p 태그의 간격이 더 넓다.-->
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="practice">실습</p>
+<script>
+    var names = ["Kim", "Lee", "Park", "Hwang"];
+    var text = "";
+    var i;
+    for (i=0; i<names.length; i++){
+        text += names[i] + "<br>";
+    }
+    document.getElementById("practice").innerHTML = text;
+<!--    practice.innerHTML = text;-->
+
+</script>
+
+</body>
+</html>
+
+<!-- name 이라는 변수가 JS 시스템 내부의 함수와 충돌되어서 오류가 나는 것 같다.
+name, id, class, function 등의 변수이름은 어느 프로그래밍 언어에서도 사용하시지 않는 것이 좋다.
+겹치는 경우가 많다.
+-->
